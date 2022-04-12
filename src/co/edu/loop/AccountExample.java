@@ -20,16 +20,21 @@ public class AccountExample {
 				System.out.print("예금액> ");
 				int money = scn.nextInt();
 				balance += money;
+				System.out.println("정상적으로 입금되었습니다.");
 			} else if(menu == 2) {
 				// 출금 기능.
 				System.out.print("출금액> ");
 				int money = scn.nextInt();
 				balance -= money;
+				System.out.println("정상적으로 출금되었습니다.");
+		
+			
 			} else if(menu == 3) {
 				// 조회 기능.
 				System.out.print("잔고> " + balance +"\n");
 			} else if (menu == 4) {
 				// 종료.
+				System.out.println("정상적으로 종료되었습니다.");
 				run = false;
 			} else {
 				System.out.println("잘못된 메뉴를 선택하셨습니다.");
